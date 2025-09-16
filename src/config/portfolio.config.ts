@@ -53,7 +53,7 @@ export const portfolioConfig = {
       "Coding",
       "Competitive Programming",
       "Building side project",
-      "Learning Ai/ML",
+      "Learning AI/ML",
       "Gamer",
     ],
     personalInfo: {
@@ -66,8 +66,8 @@ export const portfolioConfig = {
   // Skills and Roles (reverted to initial project content)
   skills: {
     roles: [
-      "Fullstack developer",
       "Software developer",
+      "Fullstack developer",
       "Gamer",
     ],
     // Technical Skills
@@ -103,7 +103,7 @@ export const portfolioConfig = {
   // Education Information
   education: [
     {
-      degree: "Bachelor of Technology in Computer Science and Engineering (CGPA: 7.67)",
+      degree: "Bachelor of Technology in Computer Science and Engineering ",
       institution: "Indian Institute of Information Technology, Nagpur",
       location: "Nagpur, Maharashtra",
       period: "2022 – 2026",
