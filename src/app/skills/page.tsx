@@ -8,12 +8,12 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const skillPage = () => {
   return (
     // SKILLS PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
+    <div className="h-full w-full relative flex flex-col items-start gap-5">
       <Badge variant="secondary" className="gap-1.5 py-1 ">
         <LightbulbIcon className="w-4 h-4" />
         My Skills
       </Badge>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 w-full">
         <Heading>My Technical Experience/Skills.</Heading>
         <FramerWrapper y={0} x={200}>
           <p className="font-poppins text-xl w-full text-primary max-sm:text-lg">

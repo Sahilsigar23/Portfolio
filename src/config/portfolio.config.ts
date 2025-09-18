@@ -53,11 +53,11 @@ export const portfolioConfig = {
       "Coding",
       "Competitive Programming",
       "Building side project",
-      "Learning AI/ML",
+      "Learning Ai/ML",
       "Gamer",
     ],
     personalInfo: {
-      language: "English",
+      language: "Hindi and English",
       nationality: "India",
       gender: "Male",
     },
@@ -78,7 +78,8 @@ export const portfolioConfig = {
       { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
       { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
       { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+      
     ],
     frameworks: [
       { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -103,7 +104,7 @@ export const portfolioConfig = {
   // Education Information
   education: [
     {
-      degree: "Bachelor of Technology in Computer Science and Engineering ",
+      degree: "Bachelor of Technology in Computer Science and Engineering (CGPA: 7.67)",
       institution: "Indian Institute of Information Technology, Nagpur",
       location: "Nagpur, Maharashtra",
       period: "2022 – 2026",
@@ -118,7 +119,7 @@ export const portfolioConfig = {
       title: "AI Trip Planning Application",
       description:
         "AI‑powered trip planner that generates personalized itineraries using Gemini AI. Integrated Firebase auth and real‑time storage; responsive React + Tailwind UI; scalable architecture for future features (hotels, maps).",
-      tags: ["React", "Gemini AI", "Firebase", "TailwindCSS"],
+      tags: ["React", "Gemini AI", "Firebase", "TailwindCSS","Google places API"],
       link: "https://github.com/Sahilsigar23/Travel-planner",
     },
     {
@@ -134,6 +135,34 @@ export const portfolioConfig = {
         "Full‑stack chat app with real‑time messaging via Socket.IO, online status, JWT auth with bcrypt and Express middleware, Zustand for global state, robust error handling, and responsive Tailwind + DaisyUI design.",
       tags: ["MERN", "Socket.IO", "TailwindCSS", "DaisyUI", "Zustand", "MongoDB"],
       link: "https://github.com/Sahilsigar23/Real-time-chat-app",
+    },
+    {
+      title: "FastAPI Blog API",
+      description:
+        "Full‑featured backend for blog posts: CRUD, search, sorting/filtering, slugging, async DB ops, migrations, and seeding.",
+      tags: ["FastAPI", "SQLAlchemy (Async)", "Alembic", "Pydantic", "PostgreSQL", "Python"],
+      link: "https://github.com/Sahilsigar23/FastApi-blog-api",
+    },
+    {
+      title: "LeetCode Helper Extension",
+      description:
+        "Browser extension template to enhance LeetCode workflows. Vite HMR, strict ESLint, and configurable TS linting.",
+      tags: ["React", "TypeScript", "Vite", "ESLint"],
+      link: "https://github.com/Sahilsigar23/Leetcode-helper-extension",
+    },
+    {
+      title: "DesignSight – AI Design Feedback Platform",
+      description:
+        "Upload UI screenshots, get AI‑driven role‑filtered feedback, collaborate via comments, export JSON/PDF; in‑memory or MongoDB persistence.",
+      tags: ["Node.js", "Express", "TypeScript", "React", "Vite", "Google Gemini API", "MongoDB"],
+      link: "https://github.com/Sahilsigar23/-DesignSight---an-AI-powered-design-feedback-platform",
+    },
+    {
+      title: "WhatsApp Auto‑Reply Bot",
+      description:
+        "Automated WhatsApp replies with a web dashboard. Useful for customer support and personal automation.",
+      tags: ["Node.js", "Puppeteer/Evolution API","WebSockets / Socket.IO","MongoDB","Redis"],
+      link: "https://github.com/Sahilsigar23/WhatsApp-Bot",
     },
   ],
 

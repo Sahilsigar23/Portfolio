@@ -17,7 +17,7 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const morePage = () => {
   return (
     // ABOUT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
+    <div className="h-full w-full relative flex flex-col items-start gap-5">
       <Badge variant="secondary" className="gap-1.5 py-1 ">
         <PackagePlus className="h-4 w-4" />
         More
@@ -25,34 +25,33 @@ const morePage = () => {
       <div className="flex flex-col gap-3">
         <Heading>More</Heading>
       </div>
-      <div className="h-auto w-full flex flex-wrap gap-3 p-2">
+      <div className="w-full grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-sm:grid-cols-1">
         {portfolioConfig.moreLinks.map((value, indx) => {
           return (
             <FramerWrapper
               key={indx}
-              className="max-w-[32%] max-lg:max-w-full"
+              className="h-full"
               y={0}
-              scale={0.8}
-              delay={indx / 4}
-              duration={0.15}
+              scale={0.95}
+              delay={indx / 10}
+              duration={0.18}
             >
-              <Card className="w-full">
+              <Card className="h-full flex flex-col">
                 <CardHeader>
                   <CardTitle>{value.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-1">
                   <p className="text-base font-poppins ">{value.description}</p>
                 </CardContent>
                 <CardFooter>
                   <Link
                     href={value.link}
-                    target="blank"
+                    target="_blank"
                     className={cn(
                       buttonVariants({ variant: "default", size: "lg" }),
                       "w-full gap-3"
                     )}
                   >
-                    {" "}
                     <ExternalLink />
                     Visit here
                   </Link>

@@ -4,13 +4,13 @@ import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
 
-const contactPage = () => {
+const ContactPage = () => {
   return (
     // PROJECT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
+    <div className="h-full w-full relative flex flex-col items-start gap-5">
       <Badge variant="secondary" className="gap-1.5 py-1 ">
         <Phone className="h-4 w-4" />
-        Contact Us
+        Contact
       </Badge>
       <div className="flex flex-col gap-3 w-full">
         <Heading>Contact Me!</Heading>
@@ -25,4 +25,4 @@ const contactPage = () => {
   );
 };
 
-export default contactPage;
+export default ContactPage;

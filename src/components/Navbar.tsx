@@ -77,6 +77,8 @@ const Navbar = () => {
   ];
   const [scrolling, setScrolling] = useState(false);
   const pathname = usePathname()
+
+  const [dockCfg, setDockCfg] = useState({ magnification: 80, distance: 150, panelHeight: 64 });
   
   useEffect(() => {
     const handleScroll = () => {
@@ -89,6 +91,12 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
 
+    // Reduce/disable magnification on touch devices to avoid enlarge on tap
+    const isCoarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    if (isCoarse) {
+      setDockCfg({ magnification: 52, distance: 80, panelHeight: 56 });
+    }
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -97,8 +105,8 @@ const Navbar = () => {
 
   return (
 
-    <div className={`fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] ${scrolling ? "hidden":"block"}`}>
-    <Dock className='items-end pb-3 rounded-full'>
+    <div className={`fixed right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[9999] top-5`}>
+    <Dock className='items-end pb-3 rounded-full' magnification={dockCfg.magnification} distance={dockCfg.distance} panelHeight={dockCfg.panelHeight}>
       {data.map((item, idx) => (
         <Link href={item.href} key={idx}>
 

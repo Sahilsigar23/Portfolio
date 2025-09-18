@@ -114,32 +114,22 @@
 }
 
 @keyframes text-slide {
-  0%,
-  16% {
-    transform: translateY(0%);
-  }
+  0%, 16% { transform: translateY(0%); }
+  20%, 36% { transform: translateY(-16.66%); }
+  40%, 56% { transform: translateY(-33.33%); }
+  60%, 76% { transform: translateY(-50%); }
+  80%, 96% { transform: translateY(-66.66%); }
+  100% { transform: translateY(-83.33%); }
+}
 
-  20%,
-  36% {
-    transform: translateY(-16.66%);
-  }
+/* New: 3-item rotator to match 3 roles and avoid glitches */
+.animate-text-slide-3 {
+  animation: text-slide-3 9s ease-in-out infinite;
+}
 
-  40%,
-  56% {
-    transform: translateY(-33.33%);
-  }
-
-  60%,
-  76% {
-    transform: translateY(-50%);
-  }
-
-  80%,
-  96% {
-    transform: translateY(-66.66%);
-  }
-
-  100% {
-    transform: translateY(-83.33%);
-  }
+@keyframes text-slide-3 {
+  0%, 30% { transform: translateY(0%); }
+  33%, 63% { transform: translateY(-100%); }
+  66%, 96% { transform: translateY(-200%); }
+  100% { transform: translateY(0%); }
 }

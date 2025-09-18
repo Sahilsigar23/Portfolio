@@ -8,7 +8,7 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const projectsPage = () => {
   return (
     // PROJECT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
+    <div className="h-full w-full relative flex flex-col items-start gap-5">
       <Badge variant="secondary" className="gap-1.5 py-1 ">
         <Layers className="h-4 w-4" />
         Projects

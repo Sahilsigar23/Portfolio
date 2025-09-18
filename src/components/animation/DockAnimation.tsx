@@ -83,11 +83,8 @@ function Dock({
   const mouseX = useMotionValue(Infinity);
   const isHovered = useMotionValue(0);
 
-  const maxHeight = useMemo(() => {
-    return Math.max(DOCK_HEIGHT, magnification + magnification / 2 + 4);
-  }, [magnification]);
-
-  const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
+  // Lock the dock container height to panelHeight to avoid page flicker on hover
+  const heightRow = useTransform(isHovered, [0, 1], [panelHeight, panelHeight]);
   const height = useSpring(heightRow, spring);
 
   return (
@@ -96,7 +93,7 @@ function Dock({
         height: height,
         scrollbarWidth: 'none',
       }}
-      className='mx-0 sm:mx-2 flex max-w-full items-end overflow-x-auto'
+      className='mx-0 sm:mx-2 flex max-w-full items-end overflow-x-auto z-[10000]'
     >
       <motion.div
         onMouseMove={({ pageX }) => {
