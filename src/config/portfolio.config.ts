@@ -54,7 +54,7 @@ export const portfolioConfig = {
       "Competitive Programming",
       "Building side project",
       "Learning Ai/ML",
-      "Gamer",
+      "Gaming",
     ],
     personalInfo: {
       language: "Hindi and English",
