@@ -53,7 +53,7 @@ export const portfolioConfig = {
       "Coding",
       "Competitive Programming",
       "Building side project",
-      "Learning Ai/ML",
+      "Learning AI/ML",
       "Gaming",
     ],
     personalInfo: {
